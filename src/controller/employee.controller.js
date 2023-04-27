@@ -1,5 +1,6 @@
 
-
+// import employee mode
+const empModel=require('./model/employee.model');
 exports.getEmployees=(req,res)=>
 {
     res.json({
