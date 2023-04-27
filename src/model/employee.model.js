@@ -20,10 +20,10 @@ conn.query=('SELECT * FROM employees', (err,res)=>{
 if(err)
 {
     console.log('Error while fetching employees',err);
-    console.log(null,err);
+    result(null,err);
 }
 console.log('Employees fetched successful');
-console.log(null, res);
+result(null, res);
 }
 );
 }
