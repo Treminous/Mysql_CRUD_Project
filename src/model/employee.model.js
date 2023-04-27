@@ -22,8 +22,10 @@ if(err)
     console.log('Error while fetching employees',err);
     result(null,err);
 }
+else{
 console.log('Employees fetched successful');
 result(null, res);
+}
 }
 );
 }
