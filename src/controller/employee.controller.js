@@ -1,12 +1,15 @@
 
 // import employee mode
-const empModel=require('./model/employee.model');
+const empModel=require('../model/employee.model.js');
+// get all employees
 exports.getEmployees=(req,res)=>
 {
-    res.json({
-        "status":0,
-        "message":"listing employees"
-    })
+    empModel.getAllEmployess=(err,employees)=>
+    console.log('We are here!!');
+    // res.json({
+    //     "status":0,
+    //     "message":"listing employees"
+    // })
 }
 ;
 

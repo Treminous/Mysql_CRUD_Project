@@ -15,7 +15,7 @@ var employees=(employee)=>
     this.updated_at=new Date();
 }
 //Get all employees
-employees.getEmployees=(result)=>{
+employees.getAllEmployees=(result)=>{
 conn.query=('SELECT * FROM employees', (err,res)=>{
 if(err)
 {

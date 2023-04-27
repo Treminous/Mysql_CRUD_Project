@@ -4,7 +4,7 @@ const mysql=require('mysql');
 const conn=mysql.createConnection(
     {
     host:'localhost',
-    root:'user',
+    user:'root',
     password:'',
     database:'node_mysql_crud'
     }

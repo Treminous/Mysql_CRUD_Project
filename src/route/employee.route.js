@@ -8,4 +8,5 @@ router.get('/listing', empController.getEmployees);
 router.get('/update/:id', empController.updateEmployee);
 router.post('/:id', empController.viewEmployeeDetails);
 
+
 module.exports=router;
