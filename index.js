@@ -4,16 +4,15 @@ const express=require('express');
 const app=express();
 
 //create server port
-const port=process.env.PORT || 8080;
+const port=process.env.PORT || 5000;
 //create route route
 app.get('/',(req,res)=>
 {
     res.send('Hello NodeJs ');
-
 }
 );
 //import employee route
-const employeeRoute=require('./src/route/employee.route.js');
+const employeeRoute=require('./src/route/employee.route');
 //Create employee route(Api)
 app.use('/api/v1/employee', employeeRoute);
 //Listen to port

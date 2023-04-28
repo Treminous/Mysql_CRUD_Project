@@ -1,7 +1,7 @@
 //Import database
 var conn=require('../../config/db.config');
 //Access database
-var employees=(employee)=>
+var employ=(employee)=>
 {
     this.first_name=employee.first_name;
     this.last_name=employee.last_name;
@@ -15,7 +15,7 @@ var employees=(employee)=>
     this.updated_at=new Date();
 }
 //Get all employees
-employees.getAllEmployees=(result)=>{
+employ.getAllEmployees=(result)=>{
 conn.query=('SELECT * FROM employees', (err,res)=>{
 if(err)
 {
@@ -29,3 +29,4 @@ result(null, res);
 }
 );
 }
+module.exports=employ;

@@ -1,12 +1,12 @@
 const express=require('express');
-const router=express.Router();
+const rout=express.Router();
 //import employee controller
-const empController=require('../controller/employee.controller.js');
+const empController=require('../controller/employee.controller');
 //Create root route
-router.get('/listing', empController.getEmployees);
+rout.get('/', empController.getEmployees);
 
-router.get('/update/:id', empController.updateEmployee);
-router.post('/:id', empController.viewEmployeeDetails);
+//router.get('/update/:id', empController.updateEmployee);
+// router.post('/:id', empController.viewEmployeeDetails);
 
 
-module.exports=router;
+module.exports=rout;
